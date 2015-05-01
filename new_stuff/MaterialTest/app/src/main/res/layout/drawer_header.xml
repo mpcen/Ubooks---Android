@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/image_profile"
+        android:layout_centerVertical="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:border="true"
+        app:border_color="@android:color/white"
+        app:border_width="4dp"
+        app:shadow="true" />
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/image_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_profile"
+            android:text="Name"
+            android:textColor="@android:color/white"
+            android:gravity="left"
+            style="@style/TextAppearance.AppCompat.Medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/email_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name@gmail.com"
+            android:textColor="@android:color/white"
+            android:gravity="left"
+            style="@style/TextAppearance.AppCompat.Small" />
+
+    </LinearLayout>
+
+</RelativeLayout>

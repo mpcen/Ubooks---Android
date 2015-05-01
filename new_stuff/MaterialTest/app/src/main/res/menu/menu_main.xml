@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="materialtest.theartistandtheengineer.co.materialtest.activities.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_log_out"
+        android:orderInCategory="200"
+        android:title="@string/action_log_out"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/navigate"
+        android:title="@string/next"
+        android:orderInCategory="200"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_next"/>
+
+    <item
+        android:id="@+id/tabLayout"
+        android:orderInCategory="200"
+        android:title="@string/title_activity_tab_library"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/vectorTest"
+        android:orderInCategory="200"
+        android:title="@string/title_activity_vector_test"
+        app:showAsAction="never" />
+
+</menu>

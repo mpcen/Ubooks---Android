@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="materialtest.theartistandtheengineer.co.materialtest" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="materialtest.theartistandtheengineer.co.materialtest.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="materialtest.theartistandtheengineer.co.materialtest.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="Ubooks Login"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".materialtest.ActivityUsingTabLibrary"
+            android:label="Home"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity android:name=".activities.UserProfile"
+            android:label="Profile" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".materialtest.ActivityUsingTabLibrary" />
+        </activity>
+        <activity
+            android:name=".activities.SellActivity"
+            android:label="Sell a book"
+            android:launchMode="singleTop" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".materialtest.ActivityUsingTabLibrary" />
+        </activity>
+        <activity
+            android:name=".activities.BuyActivity"
+            android:label="Buy a book"
+            android:launchMode="singleTop" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".materialtest.ActivityUsingTabLibrary" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="MainActivity2"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Ubooks Registration"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.SubActivity"
+            android:label="SubActivity" >
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="MainActivity" >
+        </activity>
+        <activity
+            android:name=".activities.VectorTestActivity"
+            android:label="VectorTestActivity" >
+        </activity>
+        <activity
+            android:name=".activities.SingleBookActivity"
+            android:label="Commit to sell" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="materialtest.theartistandtheengineer.co.materialtest.activities.SellActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.SingleBuyBookActivity"
+            android:label="Commit to buy" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="materialtest.theartistandtheengineer.co.materialtest.activities.BuyActivity" />
+        </activity>
+
+        <service android:name=".helper.MessageService" />
+
+        <activity
+            android:name=".MessagingActivity"
+            android:label="Chat"
+            android:screenOrientation="portrait" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".materialtest.ActivityUsingTabLibrary" /></activity>
+
+        <activity
+            android:name=".activities.RatingsActivity"
+            android:label="@string/title_activity_ratings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MessagingActivity" />
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!--                   IMPORTANT: Change "com.parse.tutorials.pushnotifications" to match your app's package name. -->
+                <category android:name="materialtest.theartistandtheengineer.co.materialtest" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

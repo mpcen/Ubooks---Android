@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="72dp"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/custom_book_border_style"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_book_background_style"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_book215"
+                android:id="@+id/bookThumbnail"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18dp"
+                android:id="@+id/bookTitle"
+                android:gravity="left"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@id/bookThumbnail"
+                android:layout_marginLeft="80dp"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookTitle"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_alignParentEnd="true"
+                android:gravity="left"
+                android:layout_marginLeft="80dp"
+                android:textSize="16dp"
+                android:id="@+id/bookAuthor"
+                android:text="Manny Martinez"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookAuthor"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="left"
+                android:layout_marginLeft="80dp"
+                android:textSize="11dp"
+                android:id="@+id/isbn_13"
+                android:text="1234567890123"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

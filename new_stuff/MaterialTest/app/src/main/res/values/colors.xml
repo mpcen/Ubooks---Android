@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffc904</color>
+    <color name="colorPrimaryDark">#ffc904</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorPrimaryLight">#727272</color>
+    <color name="colorHighlight">#B6B6B6</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="colorOffWhite">#eee</color>
+
+    <color name="bg_login">#000000</color>
+    <color name="bg_register">#cc9900</color>
+    <color name="bg_main">#ffc904</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#ffffff</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#ffc904</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ffc904</color>
+    <color name="menuColor">#F5F5F5</color>
+
+    <color name="ucf_yellow">#EDE107</color>
+    <color name="ucf_black">#020000</color>
+    <color name="ucf_gold">#CC9900</color>
+    <color name="very_dark_gray">#636363</color>
+
+</resources>
+
+    <!--Slidenerd video #23
+    <color name="colorHighlight">#B6B6B6</color>
+    -->

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ubooks</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_log_out">Log Out</string>
+    <string name="next">Next</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_tab_library">UBooks @ UCF</string>
+    <string name="title_activity_vector_test">VectorTestActivity</string>
+    <string name="title_activity_single_book">SingleBook</string>
+    <string name="fast_sell">Fast Sell</string>
+    <string name="hint_email">E-mail Address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Full Name</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Need a UBooks account? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered? Login.</string>
+    <string name="welcome">Welcome to UBooks</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Full Name</string>
+    <string name="logout">Logout</string>
+    <string name="message_elipses">Message...</string>
+    <string name="menu_option_complete_transaction">Complete Transaction</string>
+    <string name="menu_option_cancel_transaction">Cancel Transaction</string>
+
+    <string name="search_movies">Search Movies</string>
+
+    <string-array name="tabs">
+        <item>TAB 1</item>
+        <item>TAB 2</item>
+        <item>TAB 3</item>
+    </string-array>
+
+    <string name="condition_prompt">Book Condition</string>
+
+    <string-array name="condition_array">
+        <item>New</item>
+        <item>Like New</item>
+        <item>Good</item>
+        <item>Okay</item>
+        <item>Bad</item>
+    </string-array>
+
+    <string name="search_type_prompt">Search Type</string>
+    <string-array name="search_type">
+        <item>Author</item>
+        <item>Title</item>
+        <item>ISBN</item>
+    </string-array>
+
+    <string name="condition_prompt_buy">Book Condition</string>
+    <string-array name="condition_array_buy">
+        <item>Any</item>
+        <item>New</item>
+        <item>Like New</item>
+        <item>Good</item>
+        <item>Okay</item>
+        <item>Bad</item>
+    </string-array>
+
+    <string name="title_activity_confirm_sell">ConfirmSellActivity</string>
+    <string name="title_activity_ratings">Rate User</string>
+    <string name="app_bar_rate_seller">Rate Seller</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+
+</resources>

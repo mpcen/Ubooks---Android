@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="materialtest.theartistandtheengineer.co.materialtest.fragments.FragmentBuy">
+
+    <EditText
+        android:id="@+id/search_book"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:hint="Enter a title, author, or ISBN"
+        android:singleLine="true"
+        android:lines="1"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:layout_height="wrap_content" >
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/search_book"
+        android:text="Search"
+        android:id="@+id/button_search"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/button_search"
+        android:layout_marginTop="116dp"
+        android:id="@+id/listSearchedBooks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <!--floating circle button goes here-->
+
+</FrameLayout>
